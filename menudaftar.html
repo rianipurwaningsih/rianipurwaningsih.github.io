@@ -1,0 +1,137 @@
+<html>
+<head>
+    <style>
+       
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #008000;
+  padding: 1px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: yellow;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color:  black;
+}
+
+li a:hover:not(.active) {
+  background-color: red;
+}
+
+.active {
+  background-color: blue;
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+/* Style the list inside the menu */
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color:#FF0000;
+  height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer {
+  background-color: #0000FF;
+  padding: 1px;
+  text-align: center;
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+<header>
+<h1> Pemrograman Web </h1>
+ <ul>
+  <li> <a class="active" href="sematik1.html"> Home </a></li>
+  <li> <a href="menudaftar.html"> Daftar </a></li>
+  <li> <a href="kontak.html"> Contact </a></li>
+ </ul>
+</header>
+
+
+<section>
+    <article>
+    <h1>FORM DAFTAR</h1>
+    <form>
+        <label for="namadpn"> Nama Depan </label>
+        <input type="text">
+        <label for="namablk"> Nama Belakang </label>
+        <input type="text"><br><br>
+
+        <label for="kotalahir"> Tempat Lahir</label>
+        <input list="kotalahir">
+        <datalist id="kotalahir">
+            <option value="Kab. Madiun">
+            <option value="Kab. Magetan">
+            <option value="Kab. Ngawi">
+            <option value="Kota. Madiun">
+            <option value="Kab. Ponorogo">
+        </datalist><br><br>
+
+        <label for="Tanggal Lahir"> Tanggal Lahir </label>
+        <input type="date"> <br> <br>
+
+        <label> Jenis Kelamin </label>
+        <input type="radio" id="Laki-Laki">
+        <label for="Laki-Laki">Laki-Laki</label>
+        <input type="radio" id="Perempuan">
+        <label for="Perempuan">Perempuan</label><br> <br>
+
+        <label> Hobby </label>
+        <input type="checkbox" id="olahraga" value="olahraga">
+        <label>Olahraga</label>
+        <input type="checkbox" id="Menyanyi" value="Menyanyi">
+        <label>Menyanyi</label>
+        <input type="checkbox" id="Mengaji" value="Mengaji">
+        <label>Mengaji</label><br><br>
+
+        <label> Alamat </label><br>
+        <textarea rows="5" cols="30"></textarea> <br> <br>
+
+        <input type="submit" value="Daftar">
+        <input type="reset">
+
+    </form>
+</article>
+</section>
+
+<footer>
+<p> Created By Riani Purwaningsih <br> XII RPL 2 </p>  
+</footer>
+
+
+</body>
+</html>

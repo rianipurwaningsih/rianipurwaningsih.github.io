@@ -21,30 +21,44 @@ header {
   font-size: 35px;
   color: white;
 }
-  
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: center;
-  width: 100%;
-  height: 50px; /* only for demonstration, should be removed */
-  background: #FFFF00;
-  padding: 20px;
- 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: yellow;
 }
 
-/* Style the list inside the menu */
-div {
+li {
   float: left;
-  width: 30%;
-  height: 330px; /* only for demonstration, should be removed */
-  background: #FFA500;
-  padding: 20px;
 }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color:  black;
+}
+
+li a:hover:not(.active) {
+  background-color: red;
+}
+
+.active {
+  background-color: blue;
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+/* Style the list inside the menu */
 
 article {
   float: left;
   padding: 20px;
-  width: 70%;
+  width: 100%;
   background-color:#FF0000;
   height: 330px; /* only for demonstration, should be removed */
 }
@@ -65,12 +79,6 @@ footer {
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
 </style>
 </head>
 <body>
@@ -80,37 +88,19 @@ footer {
 
 <header>
   <h2>Riani Purwaningsih</h2>
-</header>
-
-<section>
-  <nav>
-    | <a href="sematik1.html">Home</a> |
-     <a href="formdaftar.html">Daftar</a> |
-     <a href="contact.html">Contact</a> |
-    </ul>
-  </nav>
-  
-  <div>
-  <h3>Menu</h3>
   	 <ul>
-      <li>Page Home</li>
-      <li>Page Daftar</li>
-      <li>Page Contact</li>
+      <li> <a class="active" href="sematik1.html"> Home </a></li>
+      <li> <a href="menudaftar.html"> Daftar </a></li>
+      <li> <a href="kontak.html"> Contact </a></li>
     </ul>
-  </div>
-  
+    </header>
+
+  <section>
   <article>
+    <img src="R.jpg" height="100" width="150">
     <h1>Riani Purwaningsih</h1>
     <p>Riani Purwaningsih adalah putri bungsu dari empat bersaudara. Gadis berdarah Madiun ini, lahir pada tanggal 9 Oktober 2003. Si Manis juga optimis. Hobi Menyanyi, Menulis, dan Suka Mengaji.</p>
     <p>Kini tercatat sebagai siswi tingkat akhir jurusan Rekayasa Perangkat Lunak di SMK Negeri 1 Mejayan. Gadis dengan moto: "Menulislah, maka ilmumu akan terikat." Cukup aktif di beberapa media sosial. So, jejaknya bisa dilacak melalui beberapa akun dibawah ini:
-    <ul>
-    	<li>Email : rianianing258@gmail.com </li>
-      <li>Blog : <br>
-        >> <a href ="https://rianianing.blogspot.com"> https://rianianing.blogspot.com</a>
-                     <br>
-        >> <a href ="https://rianianing.wordpress.com"> https://rianianing.wordpress.com</a>
-      </li>
-    </ul>
     </p>
   </article>
 </section>
