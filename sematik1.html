@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Layout Riani</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #008000;
+  padding: 1px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: yellow;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color:  black;
+}
+
+li a:hover:not(.active) {
+  background-color: blue;
+}
+
+.active {
+  background-color: blue;
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+/* Style the list inside the menu */
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color:#FF0000;
+  height: 330px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #0000FF;
+  padding: 1px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+</style>
+</head>
+<body>
+
+<h2>CSS Layout</h2>
+<p>Ini adalah tampilan Layout Riani Purwaningsih kelas XII RPL 2</p>
+
+<header>
+  <h2>Riani Purwaningsih</h2>
+     <ul>
+      <li> <a class="active" href="sematik1.html"> Home </a></li>
+      <li> <a href="menudaftar.html"> Daftar </a></li>
+      <li> <a href="rekapan.html"> Presensi </a></li>
+        <li> <a href="../index.php"> Logout </a></li>
+    </ul>
+    </header>
+
+  <section>
+  <article>
+    <img src="R.jpg" height="100" width="150">
+    <h1>Riani Purwaningsih</h1>
+    <p>Riani Purwaningsih adalah putri bungsu dari empat bersaudara. Gadis berdarah Madiun ini, lahir pada tanggal 9 Oktober 2003. Si Manis juga optimis. Hobi Menyanyi, Menulis, dan Suka Mengaji.</p>
+    <p>Kini tercatat sebagai siswi tingkat akhir jurusan Rekayasa Perangkat Lunak di SMK Negeri 1 Mejayan. Gadis dengan moto: "Menulislah, maka ilmumu akan terikat." 
+    </p>
+  </article>
+</section>
+
+<footer>
+  <p>Create By Riani Purwaningsih</p>
+</footer>
+
+</body>
+</html>
