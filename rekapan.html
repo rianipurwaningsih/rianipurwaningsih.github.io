@@ -1,0 +1,158 @@
+<html>
+<head>
+    <style>
+       
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #008000;
+  padding: 1px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: yellow;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color:  black;
+}
+
+li a:hover:not(.active) {
+  background-color: blue;
+}
+
+.active {
+  background-color: blue;
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+/* Style the list inside the menu */
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color:white;
+  height: 330px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+  background-color:#FF0000;
+}
+footer {
+  background-color: #0000FF;
+  padding: 1px;
+  text-align: center;
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+<header>
+  <h2>Pemrograman Web</h2>
+     <ul>
+      <li> <a href="sematik1.html"> Home </a></li>
+      <li> <a href="menudaftar.html"> Daftar </a></li>
+      <li> <a class="active" href="rekapan.html"> Presensi </a></li>
+        <li> <a href="../index.php"> Logout </a></li>
+    </ul>
+    </header>
+
+
+<section>
+    <article>
+  <style>
+table, th, td {
+  border:1px solid black;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+background-color:  green;
+color: white;
+}
+
+</style>
+<table border="1">
+  <h2>Rekap Kehadiran Siswa</h2>
+  <tr>
+    <th rowspan="2">NO</th>
+    <th width="150px" rowspan="2">NAMA</th>
+    <th rowspan="2">JK</th>
+    <th rowspan="2">KELAS</th>
+    <th colspan="4">SEPTEMBER</th>
+  </tr>
+  <tr>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>AGUS</td>
+    <td>Laki-laki</td>
+    <td>XII RPL 2</td>
+    <td>H</td>
+    <td>H</td>
+    <td>S</td>
+    <td>H</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>CINTA</td>
+    <td>Perempuan</td>
+    <td>XII RPL 2</td>
+    <td>H</td>
+    <td>H</td>
+    <td>H</td>
+    <td>H</td>
+  </tr>
+  <tr>
+    <td >3</td>
+    <td>DADANG</td>
+    <td>Laki-laki</td>
+    <td>XII RPL 2</td>
+    <td>H</td>
+    <td>A</td>
+    <td>H</td>
+    <td>H</td>
+  </tr>
+</table>
+            </article>
+</section>
+
+<footer>
+<p> Created By Riani Purwaningsih <br> XII RPL 2 </p>  
+</footer>
+
